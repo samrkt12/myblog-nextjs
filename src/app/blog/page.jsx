@@ -10,8 +10,9 @@ async function getData() {
   if (!res.ok) {
     throw new Error("Failed to fetch data");
   }
+  const data = await res.json();
 
-  return res.json();
+  return data;
 }
 
 const Blog = async () => {
