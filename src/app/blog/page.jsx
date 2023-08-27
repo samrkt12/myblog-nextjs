@@ -3,7 +3,7 @@ import styles from "./blog.module.css";
 import BlogList from "@/components/BlogList.jsx/BlogList";
 
 async function getData() {
-  const res = await fetch(`${process.env.NEXTAUTH_URL}/api/blogs`, {
+  const res = await fetch(`http://localhost:3000/api/blogs`, {
     cache: "no-store",
   });
 
