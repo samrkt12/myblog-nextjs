@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.imgContainer {
+  width: 25rem;
+}
+.image {
+  width: 100%;
+  height: auto;
+}
+.content {
+  width: 50rem;
+}
+
+.title {
+  margin-bottom: 1rem;
+}
+.desc {
+  font-size: 1.1rem;
+  color: #999;
+}

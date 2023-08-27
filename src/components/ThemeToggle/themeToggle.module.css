@@ -1,0 +1,21 @@
+.container {
+  width: 3rem;
+  height: 1.6rem;
+  border: 1.5px solid #318ce7;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  cursor: pointer;
+  padding: 1px;
+  overflow: hidden;
+}
+
+.circle {
+  width: 50%;
+  height: 1.4rem;
+  background-color: #318ce7;
+  border-radius: 50%;
+  position: absolute;
+}

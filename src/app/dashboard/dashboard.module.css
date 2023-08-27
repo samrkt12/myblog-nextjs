@@ -1,0 +1,66 @@
+.container {
+  display: flex;
+  gap: 8rem;
+  justify-content: space-between;
+}
+
+.blogs {
+  flex: 1;
+}
+
+.blog {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.title {
+  text-align: start;
+  padding: 1em;
+  font-size: 1.2rem;
+}
+.delete {
+  cursor: pointer;
+}
+
+.new {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.input,
+.textArea {
+  padding: 0.8em;
+  background-color: transparent;
+  border: 2px solid #bbb;
+  border-radius: 3px;
+  color: inherit;
+  font-size: 1.2rem;
+}
+
+.button {
+  padding: 1.2em;
+  margin: 0 auto;
+  cursor: pointer;
+  width: 12rem;
+  background-color: #318ce7;
+  border: none;
+  border-radius: 5px;
+  color: #eee;
+  font-weight: bold;
+}
