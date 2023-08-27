@@ -4,7 +4,7 @@ import BlogList from "@/components/BlogList.jsx/BlogList";
 
 async function getData() {
   try {
-    const res = await fetch(`http://127.0.0.1:3000/api/blogs`, {
+    const res = await fetch(`${process.env.NEXTAUTH_URL}/api/blogs`, {
       cache: "no-store",
     });
 
