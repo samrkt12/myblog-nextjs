@@ -23,3 +23,41 @@
   font-size: 1.1rem;
   color: #999;
 }
+
+@media (max-width: 1024px) {
+  .container {
+    gap: 2.5rem;
+  }
+  .title {
+    font-size: 1.5rem;
+  }
+  .desc {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    gap: 2rem;
+  }
+  .title {
+    font-size: 1.3rem;
+    margin-bottom: 0.6rem;
+  }
+  .desc {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    gap: 1rem;
+  }
+  .title {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .desc {
+    font-size: 0.8rem;
+  }
+}

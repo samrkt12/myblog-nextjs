@@ -4,26 +4,30 @@ import Hero from "public/hero.png";
 import Link from "next/link";
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <div className={styles.item}>
-        <h1 className={styles.title}>
-          Read.
-          <br />
-          Write.
-          <br />
-          Inspire.
-        </h1>
-        <p className={styles.text}>
-          Unleash your creativity, share your experiences, and be part of a
-          vibrant community that celebrates the magic of words.
-        </p>
+    <>
+      <div className={styles.container}>
+        <div className={styles.item}>
+          <h1 className={styles.title}>
+            Read.
+            <br />
+            Write.
+            <br />
+            Inspire.
+          </h1>
+          <p className={styles.text}>
+            Unleash your creativity, share your experiences, and be part of a
+            vibrant community that celebrates the magic of words.
+          </p>
+        </div>
+        <div className={`${styles.item} ${styles.imgContainer}`}>
+          <Image src={Hero} alt="Hero image" className={styles.img}></Image>
+        </div>
+      </div>
+      <div style={{ margin: "0 auto" }}>
         <Link href="/blog">
           <button className={styles.btn}>Read blogs</button>
         </Link>
       </div>
-      <div className={styles.item}>
-        <Image src={Hero} alt="Hero image" className={styles.img}></Image>
-      </div>
-    </div>
+    </>
   );
 }

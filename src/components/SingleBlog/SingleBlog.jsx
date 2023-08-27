@@ -32,6 +32,7 @@ const SingleBlog = ({ data, styles }) => {
           />
         </div>
       </div>
+      <div className={styles.line}></div>
       <div className={styles.content}>
         <p className={styles.text}>{data.content}</p>
       </div>

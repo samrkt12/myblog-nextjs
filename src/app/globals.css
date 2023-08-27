@@ -37,3 +37,21 @@ a {
   background-color: #111;
   color: #bbb;
 }
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 2.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
+  }
+}

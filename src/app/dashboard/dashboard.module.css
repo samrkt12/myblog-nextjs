@@ -1,6 +1,6 @@
 .container {
   display: flex;
-  gap: 8rem;
+  gap: 3rem;
   justify-content: space-between;
 }
 
@@ -12,25 +12,33 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 1rem;
   margin-bottom: 3rem;
   position: relative;
 }
-
+.blogData {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
 .add {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+.imgContainer {
+  position: relative;
+  height: 150px;
+  width: 250px;
+}
 .image {
   width: 100%;
   height: auto;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .title {
-  text-align: start;
-  padding: 1em;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 .delete {
   cursor: pointer;
@@ -54,13 +62,58 @@
 }
 
 .button {
-  padding: 1.2em;
+  padding: 1em 5rem;
+  font-size: 1rem;
   margin: 0 auto;
   cursor: pointer;
-  width: 12rem;
   background-color: #318ce7;
   border: none;
   border-radius: 5px;
   color: #eee;
   font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+  .title {
+    font-size: 0.9rem;
+  }
+  .input,
+  .textArea {
+    font-size: 1rem;
+  }
+  .button {
+    font-size: 0.8rem;
+  }
+  .imgContainer {
+    height: 120px;
+    width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+  .new {
+    padding: 0 2rem;
+  }
+  .button {
+    font-size: 0.7rem;
+  }
+  .title {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .new {
+    padding: 0 1rem;
+  }
+  .title {
+    font-size: 0.7rem;
+  }
+  .imgContainer {
+    height: 80px;
+    width: 150px;
+  }
 }

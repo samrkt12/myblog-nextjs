@@ -5,8 +5,11 @@ import styles from "./navabar.module.css";
 import ThemeToggle from "../ThemeToggle/ThemeToggle";
 import { signOut, useSession } from "next-auth/react";
 import { toast } from "react-toastify";
+import { usePathname } from "next/navigation";
 const Navbar = () => {
   const session = useSession();
+  const pathname = usePathname();
+
   return (
     <div className={styles.container}>
       <Link href="/" className={styles.logo}>
@@ -14,21 +17,27 @@ const Navbar = () => {
       </Link>
       <div className={styles.links}>
         <ThemeToggle />
-        <Link href="/" className={styles.link}>
+        <Link href="/" className={pathname === "/" ? `${styles.active}` : ""}>
           Home
         </Link>
-        <Link href="/blog" className={styles.link}>
+        <Link
+          href="/blog"
+          className={pathname === "/blog" ? `${styles.active}` : ""}
+        >
           Blog
         </Link>
-        <Link href="/dashboard" className={styles.link}>
+        <Link
+          href="/dashboard"
+          className={pathname === "/dashboard" ? `${styles.active}` : ""}
+        >
           Dashboard
         </Link>
         {session.status === "authenticated" && (
           <button
             className={styles.btn}
             onClick={() => {
-              toast.success("Logged out");
               signOut();
+              toast.success("Logged out");
             }}
           >
             Logout

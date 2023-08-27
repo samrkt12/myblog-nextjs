@@ -1,14 +1,15 @@
 .container {
   display: flex;
+
   align-items: center;
-  gap: 5rem;
+  gap: 1rem;
 }
 
 .item {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .title {
@@ -23,7 +24,9 @@
   font-weight: 400;
 }
 .btn {
-  padding: 1em;
+  margin: 0 auto;
+  font-size: 1rem;
+  padding: 1.1em 4em;
   cursor: pointer;
   background-color: #318ce7;
   border: none;
@@ -40,9 +43,51 @@
 
 @keyframes updown {
   from {
-    transform: translateY(-10px);
+    transform: translateY(-12px);
   }
   to {
-    transform: translateY(10px);
+    transform: translateY(12px);
+  }
+}
+
+@media (max-width: 1024px) {
+  .title {
+    font-size: 2.8rem;
+  }
+  .text {
+    font-size: 1rem;
+  }
+  .btn {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.3rem;
+  }
+  .text {
+    font-size: 0.85rem;
+  }
+
+  .btn {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+  .title {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .text {
+    text-align: center;
+    font-size: 0.85rem;
+  }
+  .btn {
+    font-size: 0.7rem;
   }
 }

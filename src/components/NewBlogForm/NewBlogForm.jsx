@@ -3,6 +3,9 @@ import React from "react";
 const NewBlogForm = ({ styles, handleSubmit, invalidImg }) => {
   return (
     <form className={styles.new} onSubmit={handleSubmit}>
+      <h3 style={{ textAlign: "center", marginBottom: "5px" }}>
+        Add a new blog
+      </h3>
       <input
         type="text"
         placeholder="Title"

@@ -22,7 +22,7 @@ async function getData() {
 const Blog = async () => {
   const data = await getData();
   return (
-    <div className={styles.mainContainer}>
+    <div>
       {data &&
         data.map((item) => (
           <Link

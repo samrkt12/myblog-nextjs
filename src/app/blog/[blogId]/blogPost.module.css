@@ -1,5 +1,6 @@
 .container {
   width: 100%;
+  margin: 1rem auto;
 }
 
 .top {
@@ -11,6 +12,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 1rem;
 }
 
 .title {
@@ -34,13 +36,12 @@
 }
 
 .username {
-  margin-right: 20px;
+  margin-right: 1rem;
 }
 
 .imageContainer {
   flex: 1;
-  /* max-width: 40rem; */
-  height: 18rem;
+  height: 16rem;
   position: relative;
 }
 
@@ -49,11 +50,79 @@
   width: 100%;
   height: auto;
 }
+.line {
+  margin: 1.7rem auto;
+  width: 70%;
+  border: 1px solid #318ce7;
+}
 
 .content {
   margin: 3rem 0;
   font-size: 1.1rem;
   font-weight: 300;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
   color: #999;
   text-align: justify;
+}
+
+@media (max-width: 1024px) {
+  /* .top {
+    flex-direction: column-reverse;
+  } */
+  .info {
+    gap: 1.2rem;
+  }
+  .imageContainer {
+    display: none;
+  }
+  .title {
+    font-size: 1.4rem;
+  }
+  .desc {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .content {
+    font-size: 1rem;
+    margin: 2.5rem 0;
+  }
+  .username,
+  .datetime {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.3rem;
+  }
+  .desc {
+    font-size: 0.9rem;
+  }
+  .content {
+    font-size: 0.9rem;
+    margin: 2.2rem 0;
+  }
+  .username,
+  .datetime {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.1rem;
+  }
+  .desc {
+    font-size: 0.8rem;
+  }
+  .content {
+    font-size: 0.8rem;
+    margin: 2rem 0;
+  }
+  .username,
+  .datetime {
+    font-size: 0.7rem;
+  }
 }
