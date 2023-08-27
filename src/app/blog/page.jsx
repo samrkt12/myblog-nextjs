@@ -3,16 +3,19 @@ import styles from "./blog.module.css";
 import BlogList from "@/components/BlogList.jsx/BlogList";
 
 async function getData() {
-  const res = await fetch(`http://localhost:3000/api/blogs`, {
-    cache: "no-store",
-  });
+  try {
+    const res = await fetch(`http://127.0.0.1:3000/api/blogs`, {
+      cache: "no-store",
+    });
 
-  if (!res.ok) {
-    throw new Error("Failed to fetch data");
+    if (!res.ok) {
+      throw new Error("Failed to fetch data");
+    }
+    return res.json();
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    throw error;
   }
-  const data = await res.json();
-
-  return data;
 }
 
 const Blog = async () => {
