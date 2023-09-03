@@ -3,6 +3,7 @@ import styles from "./blog.module.css";
 // import BlogList from "@/components/BlogList.jsx/BlogList";
 import Link from "next/link";
 import Image from "next/image";
+
 async function getData() {
   try {
     const res = await fetch(`${process.env.NEXTAUTH_URL}/api/blogs`, {

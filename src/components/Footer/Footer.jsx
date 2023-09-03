@@ -6,7 +6,11 @@ const Footer = () => {
     <div className={styles.container}>
       <h4>
         Created by{" "}
-        <Link href="https://www.google.com/" style={{ color: "#318ce7" }}>
+        <Link
+          href="https://satyamsingh-portfolio.vercel.app/"
+          target="_blank"
+          style={{ color: "#318ce7" }}
+        >
           Satyam Singh
         </Link>{" "}
         ©

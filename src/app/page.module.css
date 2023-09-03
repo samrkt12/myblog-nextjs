@@ -75,7 +75,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .container {
     flex-direction: column-reverse;
   }
@@ -85,7 +85,6 @@
   }
   .text {
     text-align: center;
-    font-size: 0.85rem;
   }
   .btn {
     font-size: 0.7rem;
