@@ -4,7 +4,7 @@ import styles from "./footer.module.css";
 const Footer = () => {
   return (
     <div className={styles.container}>
-      <h4>
+      <p>
         Created by{" "}
         <Link
           href="https://satyamsingh-portfolio.vercel.app/"
@@ -14,7 +14,7 @@ const Footer = () => {
           Satyam Singh
         </Link>{" "}
         ©
-      </h4>
+      </p>
     </div>
   );
 };

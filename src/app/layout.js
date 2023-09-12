@@ -15,6 +15,7 @@ export const metadata = {
   title: "MyBlog",
   description:
     "Unleash your creativity, share your experiences, and be part of a vibrant community that celebrates the magic of words.",
+  authors: [{ name: "Satyam Singh" }],
 };
 
 export default function RootLayout({ children }) {
